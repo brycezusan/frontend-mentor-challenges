@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --Yellow: hsl(47, 88%, 63%);
+  --Yellow-2: hsl(47, 84%, 53%);
+  --White: hsla(0, 0%, 100%, 0.781);
+  --White-2: hsl(0, 0%, 100%);
+  --Grey: hsla(0, 2%, 26%, 0.678);
+  --Black: hsl(0, 0%, 7%);
+  --Black-2: hsla(0, 5%, 19%, 0.329);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.6rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+ul{
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+body {
+  font-family: var(--font-family);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Black);
+}
+
+.card__socials {
+  width: 35rem;
+  background-color: var(--Black-2);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--White-2);
+  padding: 2.5rem 3rem;
+}
+
+.card__info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card__info img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.card__info p {
+  font-weight: 400;
+  color: var(--White);
+  font-size: 1.25rem;
+}
+
+.info h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.info small {
+  color: var(--Yellow);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.card__links{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 1.5rem;
+}
+
+.social{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: .85rem;
+  background-color: var(--Grey);
+  color: var(--White);
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+
+.social:hover{
+  background-color: var(--Yellow-2);
+  cursor: pointer;
+  color: var(--Black);
+  font-weight: 600;
+  transition: background-color .2s ease-in , color .1s ease-in;
+
+}
+
