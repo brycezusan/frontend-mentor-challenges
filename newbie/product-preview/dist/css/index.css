@@ -1,0 +1,171 @@
+:root{
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --font-fraunces-t: "Fraunces", serif;
+  --font-monserrat: "Montserrat", sans-serif;
+  --border-radius:1.65rem
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+
+body{
+  font-size: 1.4rem;
+  font-family: var(--font-monserrat);
+  background-color: var(--Cream);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.card{
+  max-width: 35rem;
+  background-color: var(--White);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.card__content{
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+}
+
+.card__titles{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card__titles span{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.card__title{
+  font-family: var(--font-fraunces-t);
+  line-height: 2.85rem;
+  font-size: 2.95rem;
+  color: var(--Very-dark-blue);
+}
+
+.card__content p{
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+}
+
+.card__price{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card__price p{
+  font-size: 3rem;
+  font-family: var(--font-fraunces-t);
+  font-weight: 700;
+  color: var(--Dark-cyan);
+}
+
+.card__price span{
+  text-decoration: line-through;
+  color: var(--Very-dark-blue);
+}
+
+.card__cta{
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  color: var(--White);
+  font-weight: 500;
+  background-color: var(--Dark-cyan);
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.card__cta:hover{
+  cursor: pointer;
+  background-color: var(--Very-dark-blue);
+  transition: background-color .2s ease-in;
+}
+
+
+@media (min-width:860px){
+  .card{
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card__content{
+    grid-row:  1 / 2;
+    grid-column: 2/3;
+    gap: 1.85rem;
+    padding-block-start: 2.5rem;
+    justify-content: center;
+  }
+
+  .card__titles{
+    gap: 1.5rem;
+  }
+
+  .card__title{
+    font-size: 3.35rem;
+    line-height: 3.5rem;
+
+  }
+  
+}
