@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Light-red-a: hsla(0, 100%, 67% , .1);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Orangey-yellow-a: hsla(39, 100%, 56%, .1);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Green-teal-a: hsla(166, 100%, 37% , .1);
+  --Cobalt-blue: #1125d4;
+  --Cobalt-blue-a: hsla(234, 85%, 45% , .1);
+  --Light-slate-blue-bg: #7857ff;
+  --Light-royal-blue-bg: #2e2be9;
+  --Violet-blue-c: #4e21ca;
+  --Persian-blue-c: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+/* 500-700-800 */
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.6rem;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: var(--Pale-blue);
+}
+
+.card {
+  max-width: 40rem;
+  background-color: var(--White);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+@media (min-width:860px){
+  .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 3rem;
+    max-width: 68rem;
+    overflow: hidden;
+  }
+}
+
+.card__resumen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    #7857ff,
+    #694cf9,
+    #5941f4,
+    #4736ee,
+    #2e2be9
+  );
+  padding: 5rem 6rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  color: var(--Light-lavender);
+}
+
+@media (min-width:860px){
+
+  .card__resumen{
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
+}
+
+.card__circle {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    #1125d4,
+    #2b24d1,
+    #4736ee,
+    #4736ee,
+    #4736ee
+  );
+}
+
+.card__circle h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--White);
+}
+.card__circle small {
+  font-weight: 700;
+  color: var(--Light-lavender);
+}
+.subtitle {
+  font-weight: 800;
+  color: var(--White);
+}
+
+.card__stats{
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__stats h3{
+  color: var(--Dark-gray-blue);
+  font-weight: 800;
+}
+
+.stats{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stat{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.65rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.icon{
+  display: flex;
+  gap: 1rem;
+}
+
+.range span{
+  color: var(--Dark-gray-blue);
+}
+
+.range{
+  color:#bbb;
+}
+
+.card__cta{
+  color: var(--White);
+  padding: 1.8rem;
+  border-radius: 3.5rem;
+  background-color: var(--Dark-gray-blue);
+  font-weight: 800;
+  border: none;
+  transition: background-color .2s ease-in , letter-spacing .2s ease;
+}
+
+.card__cta:hover{
+  cursor: pointer;
+  background-color: var(--Light-royal-blue-bg);
+  letter-spacing: 2px;
+}
+
+@media (min-width:860px){
+  .card__stats{
+    padding: 2.5rem 3.25rem;
+  }
+  .stat{
+    padding: 1.4rem;
+  }
+  .card__cta{
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+  }
+}
+.reaction{
+  color: var(--Light-red);
+  background-color: var(--Light-red-a);
+}
+.memory{
+  color: var(--Orangey-yellow);
+  background-color: var(--Orangey-yellow-a);
+}
+.verbal{
+  color: var(--Green-teal);
+  background-color: var(--Green-teal-a);
+}
+.visual{
+  color: var(--Cobalt-blue);
+  background-color: var(--Cobalt-blue-a);
+}

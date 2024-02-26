@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+  --font-outfit: "Outfit", sans-serif;/*400-600-700*/
+  --font-young:"Young Serif", serif;/* 400 */
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-outfit);
+  font-size: 1.6rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+
+body{
+  background-color: var(--Eggshell);
+  display: grid;
+  place-content: center;
+}
+
+@media (min-width:720px) {
+  body{ 
+    padding-block: 4rem;
+  }
+}
+
+.principal{
+  max-width: 70rem;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  background-color: var(--White);
+}
+
+.principal img{
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
+.container{
+  width: calc(100% - 12.5%);
+  margin-inline: auto;
+}
+
+.hero__content{
+  margin-block: 4rem;
+}
+
+.hero__content h1{
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--Dark-Charcoal);
+  font-family: var(--font-young);
+}
+
+.hero__content p{
+  /* color: var(--); */
+  color: var(--Dark-Charcoal);
+  font-weight: 500;
+  margin-block: 1rem;
+}
+
+.preparation{
+  padding: 2.5rem 5rem;
+  border-radius:0.5rem;
+  background-color: var(--Rose-White);
+}
+
+.preparation h3{
+  color: var(--Dark-Raspberry);
+  font-size: 2rem;
+}
+
+.preparation ul{
+  padding-top: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.preparation ul li span{
+  font-weight: 400;
+}
+
+.ingredients{
+  margin-block: 4rem;
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2{
+  font-family: var(--font-young);
+  color: var(--Wenge-Brown);
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.ingredients .lista,
+.instructions .lista{
+  margin-top: 2rem;
+}
+
+.lista{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--Wenge-Brown);
+  font-weight: 500;
+}
+
+.linea{
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-block: 3rem;
+}
+
+.instructions .lista span{
+  font-weight: 700;
+}
+
+.instructions .lista li::marker{
+  font-weight: 700;
+}
+
+.nutrition{
+  color: var(--Wenge-Brown);
+  font-weight: 500;
+}
+
+.nutrition p{
+  margin-block: 2rem;
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.row span{
+  font-weight: 700;
+}
+
+.row:nth-last-child(1){
+  border: none;
+}

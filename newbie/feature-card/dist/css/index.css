@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom Css */
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--Very-Light-Gray);
+}
+
+.main {
+  display: grid;
+  gap: 8rem;
+  padding-block: 2.5rem;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 35rem;
+  margin-inline: auto;
+  text-align: center;
+}
+.main__content h1 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 200;
+}
+.main__content h1 span {
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+
+.main__content p {
+  color: var(--Grayish-Blue);
+}
+
+@media(min-width:920px){
+  .main{
+    align-content: center;
+  }
+  .main__content{
+    max-width: 50rem;
+  }
+  .main__content h1{
+    font-size: 3rem;
+  }
+}
+
+.main__cards {
+  display: grid;
+  gap: 2.85rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 35rem;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 6px 41px -8px var(--Cyan);
+  -webkit-box-shadow: 1px 6px 41px -8px var(--Cyan);
+  -moz-box-shadow: 1px 6px 41px -8px var(--Cyan);
+  transition: transform .2s ease-in;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: var(--Cyan);
+  top: 0;
+  left: 0;
+}
+
+.card.team {
+  box-shadow: 1px 6px 41px -8px var(--Red);
+  -webkit-box-shadow: 1px 6px 41px -8px var(--Red);
+  -moz-box-shadow: 1px 6px 41px -8px var(--Red);
+}
+
+.card.team::after {
+  background-color: var(--Red);
+}
+
+.card.karma{
+  box-shadow: 1px 6px 41px -8px var(--Orange);
+  -webkit-box-shadow: 1px 6px 41px -8px var(--Orange);
+  -moz-box-shadow: 1px 6px 41px -8px var(--Orange);
+}
+.card.karma::after {
+  background-color: var(--Orange);
+}
+.card.calculator{
+  box-shadow: 1px 6px 41px -8px var(--Blue);
+  -webkit-box-shadow: 1px 6px 41px -8px var(--Blue);
+  -moz-box-shadow: 1px 6px 41px -8px var(--Blue);
+}
+.card.calculator::after {
+  background-color: var(--Blue);
+}
+@media(min-width:920px){
+  .main__cards{
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    'supervisor team calculator'
+    'supervisor karma calculator'
+  }
+  .card.supervisor{
+    grid-area: supervisor;
+  }
+  .card.team{
+    grid-area: team;
+  }
+  .card.karma{
+    grid-area: karma;
+  }
+  .card.calculator{
+    grid-area: calculator;
+  }
+}
+
+.card h2 {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.85rem;
+}
+.card p {
+  color: var(--Grayish-Blue);
+  margin-block: 1.85rem;
+  margin-block-end: 3.5rem;
+}
+
+.img__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img__container img {
+  width: 4rem;
+  height: 4rem;
+}
