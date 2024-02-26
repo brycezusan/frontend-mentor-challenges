@@ -55,7 +55,7 @@ The designs were created to the following widths:
 ### Links
 
 - Solution URL: [Frontend Challenges](https://github.com/brycezusan/frontend-mentor-challenges)
-- Live Site URL: [Recipe Page](https://effortless-zuccutto-9d2bf5.netlify.app/){:target="_blank"}
+- Live Site URL: [Recipe Page](https://effortless-zuccutto-9d2bf5.netlify.app/)
 
 ## Author
 
