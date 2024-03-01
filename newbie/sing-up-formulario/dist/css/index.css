@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --Red: hsl(0, 100%, 74%) ;
+  --Red-a: hsla(0, 96%, 67%, 0.884) ;
+  --Green: hsl(154, 59%, 51%);
+  --Green-a: hsl(154, 68%, 42%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%) ;
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --white:#ffff;
+  --gray:#eee;
+  --gray-b:#ddd;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+body{
+  background-color: var(--Red);
+  background-image: url('../images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  width: calc(100% - 15%);
+  margin-inline: auto;
+  padding-top: 5rem;
+  max-width: 120rem;
+}
+
+.learn{
+  color: var(--white);
+  text-align: center;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.learn p{
+  color: var(--gray);
+  padding-top: 4rem;
+}
+
+.form__content{
+  margin-top: 8rem;
+  text-align: center;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+.form__content .free{
+  background-color: var(--Blue);
+  color: var(--gray);
+  padding: 2rem 10rem;
+  border-radius: 1.5rem;
+  border-bottom: 8px solid var(--Red-a);
+}
+
+
+.free span{
+  color: var(--white);
+  font-weight: 700;
+}
+
+.formulario{
+  margin-top: 4rem;
+  width: 100%;
+  background-color: var(--white);
+  padding: 2rem 2.25rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-bottom: 10px solid var(--Red-a);
+}
+
+.formulario input{
+  width: 100%;
+  padding: 1.35rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: 1px solid var(--gray-b);
+}
+
+.formulario .wrong{
+  border: 1px solid red;
+
+}
+
+.formulario input::placeholder{
+  font-weight: 500;
+  color: var(--Dark-Blue);
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.input__content{
+  position: relative;
+  text-align: right;
+}
+.icon{
+  position: absolute;
+  top: 25%;
+  right: 8%;
+}
+.hide{
+  display: none;
+}
+
+.error{
+  font-weight: 500;
+  color: red;
+  font-style: italic;
+  text-align: right
+}
+
+.formulario .cta{
+  background-color: var(--Green);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .2s ease-in;
+  border-bottom: 4px solid var(--Green-a);
+}
+
+.cta:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+
+.formulario .footer{
+  width: calc(100% - 10%);
+  margin-inline: auto;
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+  font-size: 1.12rem;
+}
+
+.formulario .footer span{
+  font-weight: 700;
+  color: var(--Red);
+}
+
+.formulario .footer span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media(width>= 920px){
+  body{
+    background-image: url('../images/bg-intro-desktop.png');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 10rem;
+  }
+
+  .learn{
+    text-align: left;
+  }
+
+  .title{
+    font-size: 5rem;
+  }
+
+  .formulario{
+    padding: 3rem 3.5rem;
+    gap: 2rem;
+  }
+
+  .form__content{
+    margin: 0;
+  }
+}
+
+

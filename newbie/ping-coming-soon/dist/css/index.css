@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Blue-a: hsla(223, 87%, 63%, 0.726);
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-block: 2.5rem;
+  width: calc(100% - 12.5%);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero__img-container img {
+  width: 7rem;
+  margin-bottom: 5rem;
+}
+
+.hero__title {
+  color: var(--Gray);
+  font-weight: 300;
+}
+
+.hero__title span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 45rem;
+}
+
+.email {
+  padding: 1rem;
+  padding-left: 2rem;
+  border-radius: 4rem;
+  border: none;
+  border: 1px solid var(--Pale-Blue);
+  outline: none;
+}
+
+.email.none{
+  border: 1px solid red;
+}
+
+.hide{
+  display: none;
+}
+
+.email::placeholder {
+  color: var(--Pale-Blue);
+  padding-left: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.enviar {
+  background-color: var(--Blue);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 1rem;
+  border-radius: 4rem;
+  transition: all .2s ease-in;
+  font-size: 1.6rem;
+  -webkit-box-shadow: 0px 0px 14px 0px var(--Blue);
+-moz-box-shadow: 0px 0px 14px 0px var(--Blue);
+box-shadow: 0px 0px 14px 0px var(--Blue);
+}
+
+.enviar:hover {
+  letter-spacing: 2px;
+  background-color: var(--Blue-a);
+  cursor: pointer;
+  box-shadow: none;
+}
+
+
+.img__background{
+  margin-block: 10rem;
+  width: 100%;
+  max-width: 70rem;
+  margin-inline: auto;
+}
+@media(width>=960px){
+  .hero__img-container img{
+    margin-bottom: 2rem;
+
+  }
+  .hero__title{
+    font-size: 4rem;
+  }
+  .formulario{
+    flex-direction: row;
+    max-width: 60rem;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .error-mensaje{
+    position: absolute;
+    bottom: -45%;
+    left: 5%;
+  }
+
+  .email{
+    flex: 1;
+  }
+
+  .enviar{
+    width: 20rem;
+  
+  }
+  
+  .img__background{
+    margin-block: 8rem;
+  }
+  
+}
+.socials{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.social__links{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.link:hover{
+  background-color: var(--Blue);
+}
+
+.link svg{
+  width: 2rem;
+  height: 2rem;
+  fill: var(--Blue);
+}
+.link svg:hover{
+  fill: #fff;
+}
+
+.socials p{
+  color: var(--Gray);
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.error{
+  color: var(--Light-Red);
+  font-style: italic;
+  font-size: 1.2rem;
+}

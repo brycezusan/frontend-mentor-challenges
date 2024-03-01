@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish: hsl(0, 6%, 24%);
+  --Linear-135deg-from: #ffffff, to #fff5f5;
+  --Linear-135deg-from: #f8bfbf, to #ee8c8c;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+body {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+@media(width >= 800px){
+  body{
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    overflow-x: hidden;
+
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.apparel {
+  padding-block: 4rem;
+}
+
+.apparel-logo {
+  width: calc(100% - 12.5%);
+  margin-inline: auto;
+}
+
+.apparel-logo img {
+  width: 12.5rem;
+}
+
+.apparel-bg {
+  width: 100%;
+  margin-block: 4.5rem;
+}
+
+.apparel-bg img {
+  display: block;
+  width: 100%;
+  max-width: 60rem;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+.apparel-content {
+  text-align: center;
+  width: calc(100% - 12.5%);
+  margin-inline: auto;
+}
+
+.title {
+  width: 40rem;
+  margin-inline: auto;
+  font-size: 5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 5.5rem;
+  color: var(--Dark-Grayish);
+}
+
+.title-m {
+  color: var(--Soft-Red);
+  font-weight: 300;
+}
+
+.apparel-content p {
+  margin-block: 4rem;
+  color: var(--Desaturated-Red);
+}
+
+.formulario {
+  border: 1px solid var(--Soft-Red);
+  border-radius: 2.5rem;
+  max-width: 48rem;
+  margin-inline: auto;
+  position: relative;
+}
+
+.formulario.border{
+  border: 1px solid yellow;
+}
+@media(width>=1024px){
+  .apparel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+    align-items: center;
+    max-width: 1200px;
+    column-gap: 25rem;
+  }
+
+  .apparel-bg{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin: 0;
+  }
+
+  .apparel-logo{
+    grid-column: 1 / 2;
+  }
+
+  .apparel-content{
+    grid-column: 1 /2;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .title{
+    width: 100%;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    letter-spacing: 6px;
+  }
+  .formulario{
+    margin: 0;
+  }
+}
+
+.formulario input[type="text"] {
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 2.5rem;
+  background-color: transparent;
+  background: transparent;
+  padding: 1.25rem;
+  border: none;
+  outline: none;
+}
+
+.formulario input[type="text"]::placeholder {
+  color: var(--Desaturated-Red);
+  font-weight: 400;
+}
+
+.formulario input[type="submit"] {
+  position: absolute;
+  border-radius: 30%;
+  border: none;
+  height: 50px;
+  width: 60px;
+  right: 0;
+  border-radius: 2.5rem;
+  font-size: 3.25rem;
+  font-weight: 300;
+  color: white;
+  background: rgb(255, 245, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 245, 245, 1) 0%,
+    rgba(248, 191, 191, 1) 35%,
+    rgba(238, 140, 140, 1) 100%
+  );
+  transition: width .2s ease-in , opacity .2s ease-in;
+}
+
+.formulario input[type='submit']:hover{
+  cursor: pointer;
+  opacity: .5;
+  width: 80px;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.icon{
+  position: absolute;
+  top: 25%;
+  right:20%;
+}
+
+.mensaje{
+  position: absolute;
+  bottom:-35px;
+  left: 5%;
+  color: var(--Desaturated-Red);
+}
