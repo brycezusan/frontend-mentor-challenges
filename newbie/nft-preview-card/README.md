@@ -38,8 +38,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [NFT Preview Card](https://65e17fab8aa49f9292977d89--sweet-smakager-528fa2.netlify.app/)
 
 ## Author
 
