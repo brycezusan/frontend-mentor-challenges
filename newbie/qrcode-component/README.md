@@ -39,8 +39,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenge))
+- Live Site URL: [QR Component](https://65e17e29dd70158a689cf1a1--moonlit-frangollo-9d5c05.netlify.app/)
 
 ## Author
 
