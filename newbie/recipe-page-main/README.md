@@ -54,8 +54,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Challenges](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Recipe Page](https://effortless-zuccutto-9d2bf5.netlify.app/)
 
 ## Author
 
