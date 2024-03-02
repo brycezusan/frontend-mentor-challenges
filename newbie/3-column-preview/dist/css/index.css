@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+:root {
+  --font-heading:"Big Shoulders Display", sans-serif;
+  --font-body: "Lexend Deca", sans-serif;
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom Css */
+
+body{
+  background-color: var(--Transparent-white);
+
+}
+
+.cards{
+  width: calc(100% - 20%);
+  margin-inline: auto;
+  margin-block: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card{
+  padding:5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  color: var(--Transparent-white);
+}
+
+.card h2{
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  color: var(--Very-light-gray);
+  font-weight: 700;
+}
+.sedans{
+  background-color: var(--Bright-orange);
+}
+.suvs{
+  background-color: var(--Dark-cyan);
+}
+.luxury{
+  background-color: var(--Very-dark-cyan);
+}
+
+.card button{
+  padding: 1.25rem 3rem;
+  font-size: 1.45rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: var(--Very-light-gray);
+}
+.card button:hover{
+  cursor: pointer;
+}
+
+.sedans button{
+  color: var(--Bright-orange);
+}
+.suvs button{
+  color: var(--Dark-cyan);
+}
+.luxury button{
+  color: var(--Very-dark-cyan);
+}
+
+@media(width>= 920px){
+  body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+  .cards{
+    display: flex;
+    max-width: 90rem;
+    width: 100%;
+  }
+
+  .card{
+    padding: 5rem;
+    width: 32%;
+    transition: width .2s ease-in;
+    opacity: .9;
+  }
+
+  .card button{
+    margin-top: 4rem;
+  }
+
+  .card.open{
+    width: 324px;
+    opacity: 1;
+  }
+
+  /* .card.open button{
+    margin-top: 9rem;
+  } */
+}

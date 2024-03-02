@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+
+body {
+  background-color: var(--Light-pink);
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+@media(width>= 680px){
+  body{
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+  }
+}
+
+.card {
+  width: calc(100% - 20%);
+  background-color: var(--White);
+  margin-inline: auto;
+  padding: 3.5rem 2rem;
+  border-radius: 1rem;
+  max-width: 68rem;
+}
+
+.card__header {
+  display: flex;
+  gap: 2rem;
+  margin-block-end: 2rem;
+}
+
+.card__header h1 {
+  font-size: 3.5rem;
+}
+
+.summary {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid #eee;
+}
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.accordion__title h3 {
+  max-width: 30rem;
+  color: var(--Dark-purple);
+}
+
+@media(width>=620px){
+  .accordion__title h3{
+    max-width: 50rem;
+  }
+}
+
+.summary.open .plus {
+  display: none;
+}
+.summary.open .minus {
+  display: block;
+}
+
+.summary .plus {
+  display: block;
+}
+.summary .minus {
+  display: none;
+}
+
+.summary.open .accordion__text {
+  height: 110px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  margin-block: 1rem;
+}
+
+
+.accordion__text {
+  height: 0;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+@media(width>=600px){
+  .summary.open .accordion__text {
+    height: 80px;
+    
+  }
+  .accordion__text{
+    max-width: 55rem;
+  }
+}
+
+.summary:nth-child(4){
+  border: none
+
+}
+
+.btn{
+  cursor: pointer;
+}
