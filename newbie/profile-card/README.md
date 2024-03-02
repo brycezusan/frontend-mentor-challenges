@@ -48,8 +48,8 @@ Dark gray: hsl(0, 0%, 59%)
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Profile Card](https://65e184b8dd70158fa09cee74--spontaneous-cocada-cb1be4.netlify.app/)
 
 ## Author
 

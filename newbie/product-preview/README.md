@@ -52,8 +52,8 @@ The designs were created to the following widths:
 
 ### Links 🔗
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Product Preview](https://65e181548e48ce923096d167--dashing-syrniki-52065d.netlify.app/)
 
 ## Author
 

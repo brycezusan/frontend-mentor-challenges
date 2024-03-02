@@ -48,8 +48,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Blog Preview](https://65e181f1207176943e4269e9--fluffy-melba-c572d8.netlify.app/)
 
 ## Author
 

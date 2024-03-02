@@ -51,8 +51,8 @@ The designs were created to the following widths:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Stats Preview](https://65e1828b51e5ed9771300dfc--neon-fudge-a7c476.netlify.app/)
 
 ## Author
 

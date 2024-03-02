@@ -50,8 +50,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Feature Card](https://65e1842e204b5a942b7ea06a--stupendous-lebkuchen-46484f.netlify.app/)
 
 ## Author
 

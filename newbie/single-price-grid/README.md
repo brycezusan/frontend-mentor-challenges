@@ -47,8 +47,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Githu](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Single Price Grid](https://65e185118759c2968215c71f--glistening-youtiao-890df2.netlify.app/)
 
 ## Author
 

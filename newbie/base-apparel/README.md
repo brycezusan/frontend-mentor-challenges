@@ -54,8 +54,8 @@ The designs were created to the following widths:
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Base Apparel](https://65e1864f8aa49f983d9779af--jovial-cuchufli-44c59a.netlify.app/)
 
 ## Author
 
