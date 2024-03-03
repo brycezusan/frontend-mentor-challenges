@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener('click',toggleClick)
 
     // const summary = btn.parentElement.parentElement;
-
     // if (summary.classList.contains("open")) {
     //   btn.src = "dist/assets/images/icon-minus.svg";
     // } else {
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 })
-
 
 function toggleClick(e){
 
