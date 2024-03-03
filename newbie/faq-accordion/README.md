@@ -52,8 +52,8 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 - Google Fonts
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/brycezusan/frontend-mentor-challenges)
+- Live Site URL: [Faq Accordion](https://65e2b4fcd8f19472f9a7685f--statuesque-sunburst-65b734.netlify.app/)
 
 ## Author
 
